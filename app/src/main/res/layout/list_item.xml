@@ -1,0 +1,97 @@
+<!-- custom_list_item_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- LinearLayout for the first item -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- ImageView for the first item -->
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius = "160dp"
+            android:layout_width = "120dp"
+            android:layout_height = "120dp">
+            <ImageView
+                android:id="@+id/img"
+                android:scaleType = "centerCrop"
+                android:layout_width = "120dp"
+                android:layout_height = "120dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Nested LinearLayout for text views -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <!-- TextView for the first item -->
+            <TextView
+                android:id="@+id/txt"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:gravity="center_vertical" />
+
+            <!-- ImageView and TextView for the second item -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <!-- ImageView for the second item -->
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <!-- TextView for the second item -->
+                <TextView
+                    android:textStyle="italic"
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"/>
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="150dp"
+                    android:id="@+id/img4"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <!-- ImageView for the second item -->
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <!-- TextView for the second item -->
+                <TextView
+                    android:textStyle="italic"
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
